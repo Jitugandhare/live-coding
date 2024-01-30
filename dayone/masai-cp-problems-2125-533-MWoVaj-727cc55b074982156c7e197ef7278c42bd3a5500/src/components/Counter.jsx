@@ -16,11 +16,11 @@ const Counter = () => {
 
   return (
     <div>
-        <h2>Counter</h2>
-        <p>{count}</p>
-        <button onClick={handleAdd}>+</button>
-        <button onClick={handleSub}>-</button>
-        <button onClick={handleDouble}>Double</button>
+        <h2 data-testid = 'counter-header'>Counter</h2>
+        <h3 data-testid = 'count'>{count}</h3>
+        <button data-testid = 'add-btn 'onClick={handleAdd}>+</button>
+        <button data-testid = 'subtract-btn' onClick={handleSub}>-</button>
+        <button data-testid = 'double-btn' onClick={handleDouble}>Double</button>
     </div>
   )
 }
